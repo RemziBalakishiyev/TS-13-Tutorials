@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import "variables";
+@import "maps";
+@import "mixins";
+
+.container {
+  width: 900px;
+  height: 600px;
+  background-color: $secondary;
+  margin: 300px auto;
+  @include flexBoxing($direction: row, $jt: space-between, $a-items: flex-end);
+
+  .box {
+    width: 100px;
+    height: 100px;
+    font-size: map-get($map: $font-sizes, $key: "md");
+    font-weight: map-get($map: $font-weight, $key: "Bold");
+    @include flexBoxing($direction: row);
+
+    &:nth-child(1) {
+      background-color: $dark;
+      &:hover {
+        background-color: $light-yellow;
+      }
+    }
+    &:nth-child(2) {
+      background-color: $primary;
+    }
+    &:nth-child(3) {
+      background-color: $succes;
+    }
+    &:nth-child(4) {
+      background-color: $light-yellow;
+    }
+  }
+}
+
+section {
+  @extend .container;
+  background-color: $succes;
+  .item {
+    @extend .box;
+  }
+}

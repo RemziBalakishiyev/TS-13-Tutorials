@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@600&family=Oswald:wght@500&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #e2cebc;
+}
+
+.navbar{
+    margin:50px 80px;
+    padding: 16px 120px;
+    background-color: #ede3da;
+    width: 100%;
+    height: 64px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.navbar .logo{
+    display: inline-block;
+    width: 160px;
+}
+
+.navbar .menu-list{
+    float: right;
+}
+
+.navbar .menu-list li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 34px;
+    line-height: 32px;
+}
+.navbar .menu-list li > a{
+    display: inline-block;
+    text-align: center;
+    font-family: "Inter" , sans-serif;
+    text-transform: uppercase;
+    color: #3c3a36;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+
+.active{
+    width: 67px;
+    height: 36px;
+    text-align: center;
+    background-color:#e2cebc;
+    line-height: 36px;
+    border-radius: 4px;
+}

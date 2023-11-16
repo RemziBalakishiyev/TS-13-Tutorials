@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+
+:is(ul,ol) li{
+    list-style: none;
+}
+
+:is(*) a{
+    text-decoration: none;
+}
+:is(html,body){
+    font-size: 10px;
+}
+
+:root{
+    --light:#fff;
+    --dark:#020305;
+    --dark-text:#171E27;
+    --dark-btn:#0D0F12;
+}
+
+.btn{
+    display: flex;
+    padding: 1.4em 2.8em;
+    justify-content: center;
+    align-items: center;
+    gap: 5.005px;
+    border-radius: 10.01px;
+    box-shadow: 0px 9.5093px 22.52202px -5.00489px rgba(13, 15, 18, 0.50);
+}
+
+.btn-dark{
+    background-color: var(--dark-btn);
+    color:var(--light)
+}
+
+header{
+    /* background-color: var(--dark); */
+    width: 100%;
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    width: 90%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header nav .menu-list{
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    align-items: center;
+}
+
+header nav .menu-list :where(a) {
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+header nav .menu-list a :not(.btn-dark){
+    color: var(--dark);
+}
+
+
+:is(li) .btn-dark{
+    color: var(--light);
+}
+
+.banner-container{
+    width: 90%;
+    height: 700px;
+    /* background-color: var(--dark); */
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.banner-container .banner-img{
+    width: 100%;
+    min-width: 200px;
+    height: 700px;
+}
+.banner-container .banner-text{
+    max-width: 206px;
+    color: var(--light);
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
+.banner-container .cosmos-img-container{
+    position: absolute;
+    top: 0;
+    right: 10%;
+}
+
+.banner-container .cosmos-img-container img{
+    height: 800px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.banner-container .cosmos-img-container .chart-card{
+    background-color: var(--light);
+    width: 60%;
+    max-width: 250px;
+    height: 150px;
+    border-radius: 12.012px;
+    box-shadow: 0px 10.00978px 19.51908px -6.00587px rgba(99, 117, 124, 0.40);
+    position: absolute;
+    top:50%;
+    padding: 1.6em 2em;
+}
+
+.banner-container .cosmos-img-container .chart-card .chart-card-head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.banner-container .cosmos-img-container .chart-card .chart-card-head img{
+    width: 20.02px;
+    height: 20.02px;
+}
+
+.banner-container .cosmos-img-container  .chart-card .chart{
+    display: flex;
+    justify-content: center;
+}
+
+
+.rectangle-card{
+    width: 70%;
+    max-width:280px ;
+    height: 65px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1.2em;
+    border-radius: 12.012px;
+    background: var(--dark);
+    box-shadow: 0px 10.00978px 19.51908px -6.00587px rgba(99, 117, 124, 0.40);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-10%);
+   
+
+}
+
+.rectangle-card h4{
+    color: var(--light);
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.rectangle-card p{
+    color: var(--light);
+    font-size:1rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 6.006px;
+}
+
+.head-content{
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 2;
+    margin-top: 3em;
+}
+
+.head-content p{
+    width: 100%;
+    max-width: 351px;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    color: var(--dark-text);
+}
+
+.button-group-head{
+    width: 20%;
+    display: flex;
+    gap: 10px;
+}
+
+@media (700px < width < 1000px) {
+    header nav{
+        margin-top: 10px;
+        flex-direction: column;
+    }
+    .banner-container .cosmos-img-container{
+        width: 50%;
+        position: absolute;
+        top:0;
+        right: 30%;
+        
+    }
+    .banner-container .cosmos-img-container img{
+        width: 450px;
+        height: 700px;
+    }
+
+    .rectangle-card{
+        top:80%;
+    }
+    
+    .head-content p{
+      max-width: none;
+    }
+    .button-group-head{
+        width: 100%;
+        justify-content: center;
+    }
+
+}
+
+@media (  width<700px){
+    html{
+        font-size: 9px;
+    }
+
+    header {
+        height: 2000px
+    }
+    header nav{
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+        gap: 10px;
+        justify-content: flex-start;
+        align-items: center;
+        height: 200px;
+    }
+
+    header nav .menu-list{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+    .banner-container{
+        width: 100%;
+    }
+    .banner-container .banner-img{
+        border-radius: 0%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .banner-container .cosmos-img-container{
+        width: 100%;
+        top:40%;
+        transform: translate(10%);
+    }
+    .banner-container .cosmos-img-container img{
+        height: 700px;
+    }
+
+    .head-content{
+        margin-top: 35em;
+        width: 100%;
+        padding: 2em;
+    }
+    .head-content p{
+        max-width: none;
+    }
+} 

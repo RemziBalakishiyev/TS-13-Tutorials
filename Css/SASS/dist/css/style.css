@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container, section {
+  width: 900px;
+  height: 600px;
+  background-color: #007ea7;
+  margin: 300px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 5px;
+}
+.container .box, section .box, section .item {
+  width: 100px;
+  height: 100px;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.container .box:nth-child(1), section .box:nth-child(1), section .item:nth-child(1) {
+  background-color: #353535;
+}
+.container .box:nth-child(1):hover, section .box:nth-child(1):hover, section .item:nth-child(1):hover {
+  background-color: #fcf6bd;
+}
+.container .box:nth-child(2), section .box:nth-child(2), section .item:nth-child(2) {
+  background-color: #9381ff;
+}
+.container .box:nth-child(3), section .box:nth-child(3), section .item:nth-child(3) {
+  background-color: #52b788;
+}
+.container .box:nth-child(4), section .box:nth-child(4), section .item:nth-child(4) {
+  background-color: #fcf6bd;
+}
+
+section {
+  background-color: #52b788;
+}
+
+/*# sourceMappingURL=style.css.map */
