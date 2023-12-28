@@ -173,3 +173,7 @@ for (const iterator of Object.values(john)) {
 //? Object method - Object.keys()
 
 console.log(Object.keys(john));
+
+import module from "../08.Ders(Callback,Closure,IIFE))/app.js";
+
+console.log(module.connectionString);
