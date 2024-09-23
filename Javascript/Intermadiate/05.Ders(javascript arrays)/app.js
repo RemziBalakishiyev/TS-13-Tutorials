@@ -52,21 +52,21 @@ const movies = {
       forthSeason: seasons,
     };
   },
-};
+  };
 
-const bookLibrary = {
-  books: [
-    "1984",
-    "Crime and Punishment",
-    "Red dragon",
-    "u geni",
-    "Romeo and Juliet",
-    "Ferhad Shirin",
-    "Her ve sulh",
-  ],
-  prices: [12, 15, 12, 25, 28, 21],
-  genre: ["Dedective", "Romantic", "Classical"],
-};
+  const bookLibrary = {
+    books: [
+      "1984",
+      "Crime and Punishment",
+      "Red dragon",
+      "u geni",
+      "Romeo and Juliet",
+      "Ferhad Shirin",
+      "Her ve sulh",
+    ],
+    prices: [12, 15, 12, 25, 28, 21],
+    genre: ["Dedective", "Romantic", "Classical"],
+  };
 
 const simpleNumberArr = [1, 2, 3, 4, 5];
 //* Array destructing

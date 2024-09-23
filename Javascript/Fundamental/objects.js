@@ -33,7 +33,7 @@
 // // if (ramzi.role == "admin") {
 // //   alert("You can enter to system");
 // // }
-// //* Object in Array
+//* Object in Array
 
 // const users = [
 //   {

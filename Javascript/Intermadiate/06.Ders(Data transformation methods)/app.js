@@ -18,38 +18,38 @@ const temperaturesInFahrenheit = [32, 68, 104, 212];
 const numbers = [1, 2, 3, 4, 5];
 const numbers2 = [-2021, 40, 0, 111, 20, 333];
 
-const employes = [
-  {
-    id: 1,
-    Department: "IT",
-    firstName: "Bruce",
-    lastName: "Wayne",
-    salaryOfYear: 60000,
-  },
-  {
-    id: 2,
-    Department: "IT",
-    firstName: "John",
-    lastName: "Wick",
-    salaryOfYear: 18000,
-  },
-  {
-    id: 3,
-    Department: "HR",
-    firstName: "Walter",
-    lastName: "White",
-    salaryOfYear: 10000,
-  },
-  {
-    id: 2,
-    Department: "IT",
-    firstName: "Jamie",
-    lastName: "Lanniste",
-    salaryOfYear: 70000,
-  },
-];
+    const employes = [
+      {
+        id: 1,
+        Department: "IT",
+        firstName: "Bruce",
+        lastName: "Wayne",
+        salaryOfYear: 60000,
+      },
+      {
+        id: 2,
+        Department: "IT",
+        firstName: "John",
+        lastName: "Wick",
+        salaryOfYear: 18000,
+      },
+      {
+        id: 3,
+        Department: "HR",
+        firstName: "Walter",
+        lastName: "White",
+        salaryOfYear: 10000,
+      },
+      {
+        id: 2,
+        Department: "IT",
+        firstName: "Jamie",
+        lastName: "Lanniste",
+        salaryOfYear: 70000,
+      },
+    ];
 
-//? map -- Arrayin elementlerini deyisib geriye yeni bir array qaytarir
+//? map -- Arrayin elementlerini deyisib geriye yeni bir array qaytarir     
 
 // const twiceNumber = numbers.map((number) => number * 2);
 
@@ -71,7 +71,7 @@ const employes = [
 // console.log(fullNameOfEmployees);
 console.clear();
 
-//? filter --  Arrayin icerisindeki elementlerin deyerin verilmis şərt üzrə yoxlayıb true olanları qaytarır.
+//? filter --  Arrayin icerisindeki elementlerin deyerin verilmis şərt üzrə yoxlayıb true olanları qaytarır.  
 
 // const evenNumber = numbers.filter(function (num) {
 //   return num % 2 == 0; // True olarsa arrayin elementini qaytaracaqdir

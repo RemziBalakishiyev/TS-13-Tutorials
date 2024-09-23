@@ -23,13 +23,13 @@
 
 //? Practice
 
-const record = document.getElementById("recorded");
-const guessBtn = document.querySelector(".guess-btn");
-const startBtn = document.querySelector(".main-btn");
-const numberInp = document.querySelector(".number-input");
-const result = document.querySelector(".guesses");
-const progress = document.getElementById("progress");
-const mainHeader = document.querySelector(".main-header");
+  const record = document.getElementById("recorded");
+  const guessBtn = document.querySelector(".guess-btn");
+  const startBtn = document.querySelector(".main-btn");
+  const numberInp = document.querySelector(".number-input");
+  const result = document.querySelector(".guesses");
+  const progress = document.getElementById("progress");
+  const mainHeader = document.querySelector(".main-header");
 const randomNumber = 13;
 
 const gameOver = function () {
